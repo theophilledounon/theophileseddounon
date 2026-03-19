@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Théophile Sèdonou DOUNON">
+    <meta name="description" content="Portfolio de Théophile Dounon - Développeur Web">
+    <title>DOUNON Sèdonou Théophile - Développeur WEB</title>
+
+    <link rel="icon" href="Cartoonify.png" type="image/png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<button id="retour" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+
+            <nav class="navbar">
+                <ul id="tete" class="nav-links">
+                    <li><a href="#menu" data-key="nav_home">Accueil</a></li>
+                    <li><a href="#propos" data-key="nav_about">À propos</a></li>
+                    <li><a href="#competences" data-key="nav_skills">Compétences</a></li>
+                    <li><a href="#projets" data-key="nav_projets">Projets</a></li>
+                    <li><a href="#contacts" data-key="nav_contacts">Contacts</a></li>
+                    <li>
+                        <a href="cv_theophile.pdf" download="CV-Theophile-Dounon.pdf" class="btn-cv">
+                            <i class="fas fa-download"></i> Télécharger mon CV
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="right">
+                <ul class="nav-links">
+                    <li>
+                        <a href="https://www.facebook.com/theophile.dounon" target="_blank" aria-label="Facebook">
+                            <svg width="18px" height="18px" viewBox="-5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-385,-7399)" fill="currentColor">
+                                        <g transform="translate(56,160)">
+                                            <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/+2290163280409" target="_blank" aria-label="WhatsApp">
+                            <svg fill="currentColor" width="18px" height="18px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M128.00049,24a104.0281,104.0281,0,0,0-91.189,154.041l-8.54687,29.915A15.99944,15.99944,0,0,0,48.044,227.73635l29.916-8.54688A104.00728,104.00728,0,1,0,128.00049,24ZM152.125,192c-.0293.02344-.084,0-.126,0A87.99949,87.99949,0,0,1,64,103.876,36.01385,36.01385,0,0,1,100,68,14.92643,14.92643,0,0,1,112.93066,75.503l11.69092,20.46094a16.01674,16.01674,0,0,1-.17187,16.16992l-7.11084,11.85156a40.03607,40.03607,0,0,0,14.67627,14.67676l11.85107-7.11133a16.01883,16.01883,0,0,1,16.17041-.17285l20.45947,11.69141A14.9238,14.9238,0,0,1,188,156,36.01427,36.01427,0,0,1,152.125,192Z"/>
+                                <path d="M136.4502,154.6592a7.99584,7.99584,0,0,1-7.397.43652,56.03179,56.03179,0,0,1-28.14892-28.14843,7.99972,7.99972,0,0,1,.43652-7.39746l9.38867-15.64844L99.36328,84.00979A19.99027,19.99027,0,0,0,80,103.89748,72.00036,72.00036,0,0,0,152,176h.10254a19.99027,19.99027,0,0,0,19.88769-19.36328l-19.8916-11.36621Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/theophile.dounon" target="_blank" aria-label="LinkedIn">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 97.75 97.75">
+                                <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z M30.562,81.966h-13.74V37.758h13.74V81.966z M23.695,31.715c-4.404,0-7.969-3.57-7.969-7.968c0.001-4.394,3.565-7.964,7.969-7.964c4.392,0,7.962,3.57,7.962,7.964C31.657,28.146,28.086,31.715,23.695,31.715z M82.023,81.966H68.294V60.467c0-5.127-0.095-11.721-7.142-11.721c-7.146,0-8.245,5.584-8.245,11.35v21.869H39.179V37.758h13.178v6.041h0.185c1.835-3.476,6.315-7.14,13-7.14c13.913,0,16.481,9.156,16.481,21.059V81.966z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="hamburger" aria-label="Menu">
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="grid">
+                    <div class="menu__item left">
+                        <span>Développeur web</span>
+                        <p id="bienvenue-msg"></p>
+                        <h2 class="title"> Je suis Théophile Sèdonou DOUNON</h2>
+                        <p>J'aide à transformer les données en décisions intelligentes</p>
+                    </div>
+                    <div class="menu__item right">
+                        <div class="menu__avatar">
+                            <img id="images" src="image1.png" width="200" height="250" alt="Photo de Théophile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="propos" class="propos">
+            <h1 class="section-title" data-key="propos_title">À propos</h1>
+            <h2 id="propos1">Qui suis-je ?</h2>
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item">
+                        <img id="image" src="image2.png" width="250" height="400" alt="Photo de profil">
+                    </div>
+                </div>
+            </div>
+            <div class="propos-content">
+                <div class="propos-text">
+                    <p data-key="propos_text">Je suis un étudiant en première année en Statistique Appliquée à l'École Nationale de Statistique, de Planification et de Démographie (ENSPD) de l'Université de Parakou. Je suis passionné par la résolution de problèmes complexes à travers les technologies liées à l'intelligence artificielle.</p>
+                    <p>Je m'intéresse particulièrement à la manière dont les données peuvent être utilisées pour comprendre des situations réelles et orienter des décisions. Mon objectif est de développer des solutions simples, efficaces et basées sur des analyses rigoureuses.</p>
+                    <p>Au cours de mon parcours, j'ai acquis des compétences en outils numériques tels que Word, Excel, PowerPoint et des notions de base en développement web, en programmation en langage Python, R et C. Je continue à renforcer ces compétences à travers des projets pratiques et des apprentissages continus.</p>
+                    <p>Je suis ouvert aux collaborations et aux échanges, et disponible pour toute opportunité académique ou professionnelle.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competences" class="section-competence">
+            <div class="container">
+                <h2 class="section-title" data-key="competences_title">MES COMPÉTENCES</h2>
+                <div class="competences-grid">
+                    <div class="competence1"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+                    <div class="competence1"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+                    <div class="competence1"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+                    <div class="competence1"><i class="fas fa-database"></i><h3>Base de données</h3></div>
+                    <div class="competence1"><i class="fas fa-file-word"></i><h3>Word</h3></div>
+                    <div class="competence1"><i class="fas fa-file-excel"></i><h3>Excel</h3></div>
+                    <div class="competence1"><i class="fas fa-file-powerpoint"></i><h3>PowerPoint</h3></div>
+                    <div class="competence1"><i class="fas fa-folder-open"></i><h3>Gestion administrative</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" class="projets">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">MES PROJETS</h1>
+                    <p>Avant de présenter mes projets, voici un aperçu du chemin que je construis. Chaque réalisation que vous allez découvrir n'est pas juste un travail accompli, mais une étape dans mon évolution en Développement WEB.</p>
+                </div>
+                <h3><strong>Développement Web - Bases modernes</strong></h3>
+                <div class="projet1"><div class="projets__content"><h2><strong>Module 1</strong></h2><p>Ce <strong>module</strong> aborde l'<strong>Introduction au Web</strong> qui permet de comprendre l'internet, les protocoles et le rôle du navigateur.</p></div></div>
+                <div class="projet1"><div class="projets__content"><h2><strong>Module 2</strong></h2><p>Ce <strong>module</strong> porte sur l'<strong>Introduction au langage de balisage HTML</strong> qui permet d'apprendre la structure d'une page HTML et les balises essentielles.</p></div></div>
+                <div class="projet1"><div class="projets__content"><h2><strong>Module 3</strong></h2><p>Ce <strong>module</strong> porte sur l'<strong>Introduction aux feuilles de style CSS</strong> qui permet d'apprendre à styliser vos pages pour un rendu visuel attrayant.</p></div></div>
+                <div class="projet1"><div class="projets__content"><h2><strong>Module 4</strong></h2><p>Ce <strong>module</strong> porte sur l'<strong>Introduction au JavaScript</strong> qui permet de rendre nos pages interactives avec les bases du langage JavaScript.</p></div></div>
+                <div class="projet1"><div class="projets__content"><h2><strong>Module 5</strong></h2><p>Ce <strong>module</strong> porte sur les <strong>Formulaires et Objets</strong> qui permettent d'apprendre à gérer les formulaires, les événements et les objets natifs (Date, Math, String).</p></div></div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Contacts</h1>
+                    <h3><strong>Envoyer un message</strong></h3>
+                    <p>Pour m'envoyer un message, cliquez sur :</p>
+                    <button id="message" class="submit">
+                        <a href="question.html">Message</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__item">
+                    <p id="nom">Théophile Sèdonou DOUNON</p>
+                </div>
+                <div class="grid__item">
+                    <ul class="nav-links">
+                        <li>
+                            <a href="https://www.facebook.com/theophile.dounon" target="_blank" aria-label="Facebook">
+                                <svg width="18px" height="18px" viewBox="-5 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd"><g transform="translate(-385,-7399)" fill="currentColor"><g transform="translate(56,160)"><path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"/></g></g></g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/+2290163280409" target="_blank" aria-label="WhatsApp">
+                                <svg fill="currentColor" width="18px" height="18px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M128.00049,24a104.0281,104.0281,0,0,0-91.189,154.041l-8.54687,29.915A15.99944,15.99944,0,0,0,48.044,227.73635l29.916-8.54688A104.00728,104.00728,0,1,0,128.00049,24ZM152.125,192c-.0293.02344-.084,0-.126,0A87.99949,87.99949,0,0,1,64,103.876,36.01385,36.01385,0,0,1,100,68,14.92643,14.92643,0,0,1,112.93066,75.503l11.69092,20.46094a16.01674,16.01674,0,0,1-.17187,16.16992l-7.11084,11.85156a40.03607,40.03607,0,0,0,14.67627,14.67676l11.85107-7.11133a16.01883,16.01883,0,0,1,16.17041-.17285l20.45947,11.69141A14.9238,14.9238,0,0,1,188,156,36.01427,36.01427,0,0,1,152.125,192Z"/>
+                                    <path d="M136.4502,154.6592a7.99584,7.99584,0,0,1-7.397.43652,56.03179,56.03179,0,0,1-28.14892-28.14843,7.99972,7.99972,0,0,1,.43652-7.39746l9.38867-15.64844L99.36328,84.00979A19.99027,19.99027,0,0,0,80,103.89748,72.00036,72.00036,0,0,0,152,176h.10254a19.99027,19.99027,0,0,0,19.88769-19.36328l-19.8916-11.36621Z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/theophile.dounon" target="_blank" aria-label="LinkedIn">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 97.75 97.75">
+                                    <path d="M48.875,0C21.882,0,0,21.882,0,48.875S21.882,97.75,48.875,97.75S97.75,75.868,97.75,48.875S75.868,0,48.875,0z M30.562,81.966h-13.74V37.758h13.74V81.966z M23.695,31.715c-4.404,0-7.969-3.57-7.969-7.968c0.001-4.394,3.565-7.964,7.969-7.964c4.392,0,7.962,3.57,7.962,7.964C31.657,28.146,28.086,31.715,23.695,31.715z M82.023,81.966H68.294V60.467c0-5.127-0.095-11.721-7.142-11.721c-7.146,0-8.245,5.584-8.245,11.35v21.869H39.179V37.758h13.178v6.041h0.185c1.835-3.476,6.315-7.14,13-7.14c13.913,0,16.481,9.156,16.481,21.059V81.966z"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__item">
+                    <p>&copy; 2026 Théophile Sèdonou DOUNON.Portfolio.</p>
+                    <p>&copy; L'excellence n'est pas négligeable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
